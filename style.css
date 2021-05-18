@@ -1,9 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-body {
-  font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
 }
 
-.menu__container {
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+/* Menu */
+.hlavicka {
+  width: 100%;
   display: flex;
+  position: fixed;
+  background-color: white;
+}
+
+.menu {
+  text-align: center;
+  margin: 0;
+}
+
+.logo-container {
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  margin-left: 20px;
+}
+
+.logo-lotos {
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.logo-text {
+  padding-left: 20px;
+  font-size: 2rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+li {
+  list-style-type: none;
+  margin: 2px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+a:hover {
+  border-bottom: 1px solid black;
+}
+
+/* Hlavní sekce  */
+.main {
+  background-image: url('./img/rozcestnik_edit.jpg');
+  background-size: cover;
+}
+
+/*Responzivita */
+@media (min-width: 640px) {
+  .hlavicka {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    margin: 0;
+  }
+
+  li {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hlavicka {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-container {
+    min-width: 200px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .buttons {
+    width: 60%;
+    margin: 0;
+  }
 }
