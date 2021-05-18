@@ -14,15 +14,16 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 /* Menu */
 .hlavicka {
   width: 100%;
   display: flex;
-  position: fixed;
+  /*position: fixed;*/
   background-color: white;
+  
 }
 
 .menu {
@@ -69,7 +70,24 @@ a:hover {
 .main {
   background-image: url('./img/rozcestnik_edit.jpg');
   background-size: cover;
+  min-height: 100vh;
+  min-width: 100%;
+  margin-top: 0;
 }
+
+.main p {
+  color: black;
+  font-size: 3rem;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  padding-top: 80px;
+  /*padding-top: 320px;
+  padding-left: 100px;
+  padding-bottom: 30px;
+  width: 500px;*/
+
+}
+
 
 /*Responzivita */
 @media (min-width: 640px) {
@@ -110,4 +128,21 @@ a:hover {
     width: 60%;
     margin: 0;
   }
+
+  .main p {
+    padding-top: 220px;
+    padding-left: 100px;
+    padding-bottom: 30px;
+    width: 600px;
+    font-size: 5rem;
+  }
+  
+}
+
+/*Patička */
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }
