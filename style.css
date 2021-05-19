@@ -90,7 +90,7 @@ a:hover {
 .my,
 .odkazy,
 .projekt {
-  width: 45%;
+  /* width: 45%; */
   padding: 20px;
   margin: 80px;
   line-height: 2;
@@ -117,6 +117,11 @@ a:hover {
 
   li {
     width: 30%;
+  }
+  .my,
+  .odkazy,
+  .projekt {
+    width: 45%;
   }
 }
 
