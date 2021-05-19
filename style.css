@@ -81,6 +81,10 @@ a:hover {
   font-family: 'Amatic SC', cursive;
   text-align: center;
   padding-top: 80px;
+  text-shadow: 1px 1px 1px black;
+  min-width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
   /*padding-top: 320px;
   padding-left: 100px;
   padding-bottom: 30px;
@@ -99,7 +103,35 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+/*Odkazy */
+.odkazy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.favorites-text {
+  min-width: 250px;
+  margin: 0;
+}
+.favorites {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+.favorites:hover {
+  border-bottom: 1px solid black;
+}
+
 /*Responzivita */
+@media (min-width: 470px) {
+  .main p {
+    width: 50%;
+  }
+}
+
 @media (min-width: 640px) {
   .hlavicka {
     display: flex;
@@ -118,6 +150,11 @@ a:hover {
   li {
     width: 30%;
   }
+
+  .main p {
+width: 70%;
+  }
+
   .my,
   .odkazy,
   .projekt {
@@ -141,12 +178,12 @@ a:hover {
     justify-content: flex-end;
   }
   .buttons {
-    width: 60%;
+    width: 80%;
     margin: 0;
   }
 
   .main p {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-left: 100px;
     padding-bottom: 30px;
     width: 600px;
@@ -161,3 +198,4 @@ footer {
   padding-bottom: 20px;
   text-align: center;
 }
+
