@@ -24,6 +24,7 @@ body {
   display: flex;
   /*position: fixed;*/
   background-color: white;
+  justify-content: space-between;
 }
 
 .menu {
@@ -125,6 +126,23 @@ a:hover {
   border-bottom: 1px solid black;
 }
 
+.nav-btn {
+  width: 3em;
+  height: 3em;
+  background-image: url(./img/hamburger1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-closed {
+  display: none;
+}
+
 /*Responzivita */
 @media (min-width: 470px) {
   .main p {
@@ -163,6 +181,10 @@ a:hover {
   .projekt {
     width: 45%;
     margin: 80px;
+  }
+
+  .nav-btn {
+    display: none;
   }
 }
 
